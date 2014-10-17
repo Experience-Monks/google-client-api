@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Mikko Haapoja <me@mikkoh.com>",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "promise": "^6.0.0",
     "scriptjs": "^2.5.7"
