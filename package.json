@@ -1,7 +1,7 @@
 {
   "name": "google-client-api",
   "version": "1.0.0",
-  "description": "",
+  "description": "Get the Google Client API object asynchronously to use Google API's",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
