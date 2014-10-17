@@ -1,0 +1,15 @@
+{
+  "name": "google-client-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mikko Haapoja <me@mikkoh.com>",
+  "license": "ISC",
+  "dependencies": {
+    "promise": "^6.0.0",
+    "scriptjs": "^2.5.7"
+  }
+}
