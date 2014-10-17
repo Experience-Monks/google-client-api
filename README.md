@@ -16,14 +16,14 @@ If you're not into promises then you can simply call this function and pass in a
 **Returns**: `Promise` - This function also returns a promise if you're into promises which will
                   return the Google Client API Object.  
 ##Example
+Using with Promise:
 ```javascript
-Using with Promise
 require( 'google-client-api' )().then( function( gapi ) {
 	// Do something with the gapi object
 });
 ```
 
-Using with callback
+Using with callback:
 ```javascript
 require( 'google-client-api' )( function( gapi ) {
 	// Do something with the gapi object
