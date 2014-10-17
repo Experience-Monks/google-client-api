@@ -26,7 +26,8 @@
     "api",
     "browser",
     "frontend",
-    "browserify"
+    "browserify",
+    "promise"
   ],
   "bugs": {
     "url": "https://github.com/Jam3/google-client-api/issues"
