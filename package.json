@@ -1,6 +1,6 @@
 {
   "name": "google-client-api",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Get the Google Client API object asynchronously to use Google API's",
   "main": "index.js",
   "scripts": {
