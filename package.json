@@ -11,5 +11,25 @@
   "dependencies": {
     "promise": "^6.0.0",
     "scriptjs": "^2.5.7"
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Jam3/google-client-api.git"
+  },
+  "keywords": [
+    "google",
+    "client",
+    "api",
+    "browser",
+    "frontend",
+    "browserify"
+  ],
+  "bugs": {
+    "url": "https://github.com/Jam3/google-client-api/issues"
+  },
+  "homepage": "https://github.com/Jam3/google-client-api"
 }
