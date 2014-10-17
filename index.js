@@ -1,18 +1,43 @@
+/** @module google-client-api */
+
 var scriptjs = require( 'scriptjs' ),
 	promise = require( 'promise' );
 
-module.exports = new promise( function( resolve, reject ) {
+/** 
+ * This module is a function which will return a Google Client API object assynchronously.
+ *
+ * This function returns a promise. (if you're into promises) Which will return the gapi Object.
+ *
+ * If you're not into promises then you can simply call this function and pass in a callback object.
+ * 
+ * @param  {Function} onComplete an optional callback which will return the Google Client API Object.
+ * @return {Promise} This function also returns a promise if you're into promises which will
+ *                   return the Google Client API Object.
+ *                                   
+ */
+module.exports = function( onComplete ) {
 
-	if( window.gapi ) {
+	return new promise( function( resolve, reject ) {
 
-		resolve( window.gapi );
-	} else {
+		if( window.gapi ) {
 
-		window.$$onClientLoad = function() {
+			doResolve( resolve, onComplete );
+		} else {
 
-			resolve( gapi );
-		};
+			window.$$onClientLoad = function() {
 
-		scriptjs( 'https://apis.google.com/js/client.js?onload=$$onClientLoad' );
-	}
-});
+				doResolve( resolve, onComplete );
+			};
+
+			scriptjs( 'https://apis.google.com/js/client.js?onload=$$onClientLoad' );
+		}
+	});
+};
+
+function doResolve( resolve, onComplete ) {
+
+	resolve( window.gapi );
+
+	if( onComplete )
+		onComplete( window.gapi );
+}

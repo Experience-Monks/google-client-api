@@ -1,6 +1,9 @@
-require( '../' ).then( function( res ) {
+require( '../' )( function( gapi ) {
 
-	console.log( res );
+	console.log( 'FROM CALLBACK', gapi );
+}).then( function( res ) {
+
+	console.log( 'FROM PROMISE', gapi );
 });
 
 console.log( 'hmmm' );
