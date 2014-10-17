@@ -2,8 +2,8 @@
 #google-client-api
 <a name="exp_module_google-client-api"></a>
 ##module.exports(onComplete) ⏏
-This module is a function which will return a Google Client API object 
-(https://developers.google.com/api-client-library/javascript/dev/dev_jscript) assynchronously.
+This module is a function which will return a 
+[Google Client API](https://developers.google.com/api-client-library/javascript/dev/dev_jscript) object assynchronously.
 
 This function returns a promise. (if you're into promises) Which will return the gapi Object.
 
